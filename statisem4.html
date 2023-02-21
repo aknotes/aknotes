@@ -9,73 +9,75 @@
     }
     h1 {
         background-color: #0077cc;
-        height: 50px;
+        height: 100px;
       text-align: center;
       color: white;
       margin: 50px 0 30px;
     }
-    .button-container {
+   .button-container {
 
-display: flex;
+  display: flex;
 
-justify-content: space-between;
+  justify-content: space-between;
 
-align-items: center;
+  align-items: center;
 
-position: fixed;
+  position: fixed;
 
-bottom: 0;
+  bottom: 0;
 
-width: 100%;
+  width: 100%;
 
-background-color: #f0f8ff; /* light blue color */
-
-}
-
-.prev-button,
-
-.next-button {
-
-color: #fff; /* white text color */
-
-background-color: #0077cc; /* another shade of light blue */
-
-border: none;
-margin-right: 15px;
-
-padding: 10px 20px;
-
-font-size: 16px;
-
-border-radius: 5px;
-
-cursor: pointer;
-
-display: flex;
-
-align-items: center;
+  background-color: #f0f8ff; /* light blue color */
 
 }
 
-.prev-button:hover,
+.prev-button a,
 
-.next-button:hover {
+.next-button a {
 
-background-color: #4169E1; /* darker shade of light blue */
+  color: #fff; /* white text color */
+
+  background-color: #6495ED; /* another shade of light blue */
+
+  border: none;
+  margin-right: 15px;
+
+  padding: 10px 20px;
+
+  font-size: 16px;
+
+  border-radius: 5px;
+
+  cursor: pointer;
+
+  display: flex;
+
+  align-items: center;
+
+  text-decoration: none; /* Remove underline from link */
 
 }
 
-.prev-button i,
+.prev-button:hover a,
 
-.next-button i {
+.next-button:hover a {
 
-margin-right: 3px;
+  background-color: #4169E1; /* darker shade of light blue */
 
 }
 
-.prev-button i {
+.prev-button a i,
 
-transform: rotate(180deg);
+.next-button a i {
+
+  margin-right: 3px;
+
+}
+
+.prev-button a i {
+
+  transform: rotate(180deg);
 
 }
     ol {
@@ -126,12 +128,12 @@ transform: rotate(180deg);
         <li><a href="statisem42.pdf">Interval Estimation</a></li>
       </ul>
   </ol>
-  <div class="button-container">
+ <div class="button-container">
 
-    <button class="prev-button"><i class="fas fa-chevron-left"></i> Prev</button>
-  
-    <button class="next-button">Next <i class="fas fa-chevron-right"></i></button>
-  
-  </div>
+  <div class="prev-button"><a href="notes.html"><i class="fas fa-chevron-left"></i> Prev</a></div>
+
+  <div class="next-button"><a href="index.html">Home<i class="fas fa-chevron-right"></i></a></div>
+
+</div>
 </body>
 </html>
