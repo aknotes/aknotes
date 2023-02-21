@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <style>
+        * {
+
+box-sizing: border-box;
+
+}
+
+body {
+
+background-color: white;
+
+font-family: Arial, sans-serif;
+
+}
+
+.container {
+
+max-width: 600px;
+
+margin: 0 auto;
+
+padding: 40px;
+
+}
+
+h1 {
+
+color: #333;
+
+font-size: 28px;
+
+font-weight: bold;
+
+margin-bottom: 40px;
+
+text-align: center;
+
+}
+
+form {
+
+background-color: lightblue;
+
+border-radius: 10px;
+
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+
+padding: 30px;
+
+}
+
+label {
+
+color: #333;
+
+display: block;
+
+font-size: 16px;
+
+font-weight: bold;
+
+margin-bottom: 10px;
+
+}
+
+input[type="text"],
+
+input[type="email"],
+
+input[type="password"],
+
+select,
+
+input[type="tel"] {
+
+background-color: #f5f5f5;
+
+border: none;
+
+border-radius: 5px;
+
+color: #666;
+
+font-size: 16px;
+
+margin-bottom: 20px;
+
+padding: 15px;
+
+width: 100%;
+
+}
+
+input[type="text"]:focus,
+
+input[type="email"]:focus,
+
+input[type="password"]:focus,
+
+select:focus,
+
+input[type="tel"]:focus {
+
+outline: none;
+
+border: 2px solid #333;
+
+}
+
+select {
+background-position: right 10px center;
+
+background-repeat: no-repeat;
+
+background-size: 20px 20px;
+
+-webkit-appearance: none;
+
+-moz-appearance: none;
+
+appearance: none;
+
+}
+
+.gender-container {
+
+display: flex;
+
+align-items: center;
+
+margin-bottom: 20px;
+
+}
+
+.gender-container label {
+
+margin-right: 10px;
+
+}
+
+.gender-container input[type="radio"] {
+
+margin-right: 5px;
+
+}
+
+.status-container {
+
+margin-bottom: 20px;
+
+}
+
+input[type="submit"] {
+
+background-color: #06A3DA;
+
+border: none;
+
+border-radius: 5px;
+
+color: #fff;
+
+cursor: pointer;
+
+font-size: 16px;
+
+font-weight: bold;
+
+padding: 15px;
+
+transition: background-color 0.3s ease;
+
+width: 100%;
+
+}
+
+input[type="submit"]:hover {
+
+background-color: #4169E1;
+
+}
+
+.success-msg {
+
+background-color: #90EE90;
+
+border-radius: 5px;
+
+color: #333;
+
+font-size: 16px;
+
+font-weight: bold;
+
+margin-top: 20px;
+
+padding: 15px;
+
+text-align: center;
+
+display: none;
+
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <h1>Sign In</h1>
+      
+        <form id="myForm">
+      
+          <label for="username">User Name</label>
+      
+          <input type="text" id="username" name="username" placeholder="Enter your user name" required>
+      
+          <label for="email">Email</label>
+      
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      
+          <label for="password">Password</label>
+      
+          <input type="password" id="password" name="password" placeholder="Enter your password" required>
+      
+          <div class="gender-container">
+      
+            <label>Gender</label>
+      
+            <input type="radio" id="male" name="gender" value="male">
+      
+            <label for="male">Male</label>
+      
+            <input type="radio" id="female" name="gender" value="female">
+      
+            <label for="female">Female</label>
+      
+          </div>
+      
+          <div class="status-container">
+      
+            <label>Status</label>
+      
+            <select id="status" name="status" required>
+      
+              <option value="">Select status</option>
+      
+              <option value="single">Single</option>
+      
+              <option value="committed">Committed</option>
+      
+            </select>
+      
+          </div>
+      
+          <label for="mobile">Mobile Number</label>
+      
+          <input type="tel" id="mobile" name="mobile" placeholder="Enter your mobile number" required>
+      
+          <label for="hobbies">Hobbies</label>
+      
+          <input type="text" id="hobbies" name="hobbies" placeholder="Enter your hobbies" required>
+      
+          <input type="submit" value="Submit">
+      
+        </form>
+      
+        <div id="success-msg" class="success-msg"></div>
+      
+      </div>
+      
+</body>
+</html>
