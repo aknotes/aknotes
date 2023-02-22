@@ -29,6 +29,72 @@ margin: 0 auto;
 padding: 40px;
 
 }
+.button-container {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  position: fixed;
+
+  bottom: 0;
+
+  width: 100%;
+
+  background-color: #f0f8ff; /* light blue color */
+
+}
+
+.prev-button a,
+
+.next-button a {
+
+  color: #fff; /* white text color */
+
+  background-color: #6495ED; /* another shade of light blue */
+
+  border: none;
+  margin-right: 15px;
+
+  padding: 10px 20px;
+
+  font-size: 16px;
+
+  border-radius: 5px;
+
+  cursor: pointer;
+
+  display: flex;
+
+  align-items: center;
+
+  text-decoration: none; /* Remove underline from link */
+
+}
+
+.prev-button:hover a,
+
+.next-button:hover a {
+
+  background-color: #4169E1; /* darker shade of light blue */
+
+}
+
+.prev-button a i,
+
+.next-button a i {
+
+  margin-right: 3px;
+
+}
+
+.prev-button a i {
+
+  transform: rotate(180deg);
+
+}
 
 h1 {
 
@@ -288,6 +354,13 @@ display: none;
         <div id="success-msg" class="success-msg"></div>
       
       </div>
+     <div class="button-container">
+
+  <div class="prev-button"><a href="notes.html"><i class="fas fa-chevron-left"></i> Prev</a></div>
+
+  <div class="next-button"><a href="index.html">Home<i class="fas fa-chevron-right"></i></a></div>
+
+</div>
       
 </body>
 </html>
