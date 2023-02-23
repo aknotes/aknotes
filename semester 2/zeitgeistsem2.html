@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+    }
+    h1 {
+        background-color: #0077cc;
+        height: 100px;
+      text-align: center;
+      color: white;
+      margin: 50px 0 30px;
+    }
+    .button-container {
+
+display: flex;
+
+justify-content: space-between;
+
+align-items: center;
+
+position: fixed;
+
+bottom: 0;
+
+width: 100%;
+
+background-color: #f0f8ff; /* light blue color */
+
+}
+
+.prev-button a,
+
+.next-button a {
+
+color: #fff; /* white text color */
+
+background-color: #6495ED; /* another shade of light blue */
+
+border: none;
+margin-right: 15px;
+
+padding: 10px 20px;
+
+font-size: 16px;
+
+border-radius: 5px;
+
+cursor: pointer;
+
+display: flex;
+
+align-items: center;
+
+text-decoration: none; /* Remove underline from link */
+
+}
+
+.prev-button:hover a,
+
+.next-button:hover a {
+
+background-color: #4169E1; /* darker shade of light blue */
+
+}
+
+.prev-button a i,
+
+.next-button a i {
+
+margin-right: 3px;
+
+}
+
+.prev-button a i {
+
+transform: rotate(180deg);
+
+}
+    ol {
+      margin: 0 0 50px;
+      padding: 0;
+      list-style: none;
+    }
+    li {
+      color: #777;
+      font-size: 18px;
+      margin: 0 0 20px;
+    }
+    a {
+      color: #0077cc;
+      text-decoration: none;
+      display: block;
+      padding: 10px 20px;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+    }
+    a:hover {
+      background-color: #0077cc;
+      color: #fff;
+    }
+    button {
+      background-color: #0077cc;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      font-size: 16px;
+      margin-top: 10px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    button:hover {
+      background-color: #005ea6;
+    }
+  </style>
+</head>
+<body>
+  <h1>Select the Chapter to Download</h1>
+  <ol>
+    <li>
+      <h2 class="chapter-title" style="color: black;">Ways With Words</h2>
+      <ul>
+        <li><a href="zeitgeist/engcp1.pdf">Should the assasin of gandhi be killed ?</a></li>
+        <li><a href="zeitgeist/engcp2.pdf">Preamble to the constitution of India</a></li>
+        <li><a href="zeitgeist/engcp3.pdf">Toba tek singh</a></li>
+        <li><a href="zeitgeist/engcp4.pdf">Freedom</a></li>
+        <li><a href="zeitgeist/engcp5.pdf">The end of living and The beginning of survival</a></li>
+        <li><a href="zeitgeist/engcp6.pdf">Zlateh the goat</a></li>
+        <li><a href="zeitgeist/engcp7.pdf">Claming an education</a></li>
+        <li><a href="zeitgeist/engcp8.pdf">The story of an hour</a></li>
+        <li><a href="zeitgeist/engcp9.pdf">On a killing tree</a></li>
+        <li><a href="zeitgeist/engcp10.pdf">Refugee blues</a></li>
+        <li><a href="zeitgeist/engcp11.pdf">Outcaste</a></li>
+        <li><a href="zeitgeist/engcp12.pdf">Chemical happiness and the meaning of life</a></li>
+        <li><a href="zeitgeist/engcp13.pdf">Amnesty</a></li>
+        <li><a href="zeitgeist/engcp14.pdf">What it's to be a trangender</a></li>
+      </ul>
+  </ol>
+  <div class="button-container">
+
+    <div class="prev-button"><a href="../notes.html"><i class="fas fa-chevron-left"></i> Prev</a></div>
+  
+    <div class="next-button"><a href="../index.html">Home<i class="fas fa-chevron-right"></i></a></div>
+  
+  </div>
+</body>
+</html>
