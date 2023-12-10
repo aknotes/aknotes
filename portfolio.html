@@ -1,418 +1,341 @@
 <!DOCTYPE html>
-
-<html>
-
-  <head>
-
-    
-
-    <title>Ak Notes Developer</title>
-
-    <style>
-        /* Reset Styles */
-
-* {
-
-box-sizing: border-box;
-
-margin: 0;
-
-padding: 0;
-
-}
-
-/* Global Styles */
-
-body {
-
-font-family: Arial, sans-serif;
-
-}
-.button-container {
-
-  display: flex;
-
-  justify-content: space-between;
-
-  align-items: center;
-
-  position: fixed;
-
-  bottom: 0;
-
-  width: 100%;
-
-  background-color: #f0f8ff; /* light blue color */
-
-}
-
-.prev-button a,
-
-.next-button a {
-
-  color: #fff; /* white text color */
-
-  background-color: #6495ED; /* another shade of light blue */
-
-  border: none;
-  margin-right: 15px;
-
-  padding: 10px 20px;
-
-  font-size: 16px;
-
-  border-radius: 5px;
-
-  cursor: pointer;
-
-  display: flex;
-
-  align-items: center;
-
-  text-decoration: none; /* Remove underline from link */
-
-}
-
-.prev-button:hover a,
-
-.next-button:hover a {
-
-  background-color: #4169E1; /* darker shade of light blue */
-
-}
-
-.prev-button a i,
-
-.next-button a i {
-
-  margin-right: 3px;
-
-}
-
-.prev-button a i {
-
-  transform: rotate(180deg);
-
-}
-
-.container {
-
-max-width: 1100px;
-
-margin: 0 auto;
-
-padding: 0 20px;
-
-}
-
-/* Header Styles */
-
-header {
-background-color: #06A3DA;
-
-color: #fff;
-
-}
-
-.header-left {
-
-display: flex;
-
-align-items: center;
-
-}
-
-.logo {
-
-font-size: 2.5rem;
-
-margin-right: 40px;
-
-}
-
-nav ul {
-
-display: flex;
-
-}
-
-nav li {
-
-margin: 0 15px;
-
-}
-
-nav a {
-
-color: #fff;
-
-text-decoration: none;
-
-font-size: 1.2rem;
-
-text-transform: uppercase;
-
-}
-
-.header-right {
-
-display: flex;
-
-align-items: center;
-
-}
-
-.profile-pic {
-
-width: 100px;
-
-height: 100px;
-
-object-fit: cover;
-
-border-radius: 50%;
-
-margin-left: 20px;
-
-}
-
-/* Main Styles */
-
-main {
-
-padding: 40px 0;
-
-}
-
-section {
-
-margin-bottom: 80px;
-
-}
-
-h2 {
-
-font-size: 2.5rem;
-
-margin-bottom: 40px;
-
-}
-
-.row {
-
-display: flex;
-
-flex-wrap: wrap;
-
-}
-
-.col {
-
-width: calc(100% / 2 - 20px);
-
-margin: 0 10px 20px 10px;
-
-}
-
-.col:last-child {
-
-margin-right: 0;
-
-}
-
-img {
-
-width: 50%;
-
-height: auto;
-
-
-}
-.images{
-    height: 100px;
-    width: 100px;
-}
-
-p {
-
-font-size: 1.2rem;
-
-line-height: 1.5;
-
-margin-bottom: 20px;
-
-}
-
-label {
-
-font-size: 1.2rem;
-
-display: block;
-
-margin-bottom: 10px;
-
-border-color: black;
-
-}
-
-input,
-
-textarea {
-
-padding: 10px;
-
-font-size: 1.2rem;
-
-border-radius: 5px;
-
-border: none;
-
-margin-bottom: 20px;
-
-border-color: black;
-
-}
-
-textarea {
-
-height: 150px;
-
-}
-
-button[type="submit"] {
-
-background-color: #06A3DA;
-
-color: #fff;
-
-padding: 10px 20px;
-
-font-size: 1.2rem;
-
-border-radius: 5px;
-
-border: none;
-
-cursor: pointer;
-
-}
-
-button[type="submit"]:hover {
-
-background-color: #091E3E;
-
-}
-
-/* Footer Styles */
-
-footer {
-
-background-color: #06A3DA;
-
-color: #fff;
-
-text-align: center;
-
-padding: 20px 0;
-
-}
-    </style>
-  </head>
-
-  <body>
-
-    <header>
-
-      <div class="container">
-
-        <div class="header-left">
-
-          <h1 class="logo">Ansar kp</h1>
-
-          <nav>
-
-            <ul>
-
-              <li><a href="index.html">Home</a></li>
-
-              <li><a href="#">About</a></li>
-
-            </ul>
-
-          </nav>
-
-        </div>
-        <div class="header-right">
-
-            <img class="profile-pic" src="img/ak.jpg" alt="Ansar image">
-  
-          </div>
-       
-
-      </div>
-
-    </header>
-
-    <main>
-
-      <section id="about">
-
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Portfolio</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: DevFolio
+  * Updated: Nov 17 2023 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <h1 class="logo"><a href="index.html">AKNOTES</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <div id="hero" class="hero route bg-image" style="background-image: url(assets/img/akimg.jpeg)">
+    <div class="overlay-itro"></div>
+    <div class="hero-content display-table">
+      <div class="table-cell">
         <div class="container">
+          <!--<p class="display-6 color-d">Hello, world!</p>-->
+          <h1 class="hero-title mb-4">I am Ansar kp</h1>
+          <p class="hero-subtitle"><span class="typed" data-typed-items="Designer, Developer, Programmer, Engineer"></span></p>
+          <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
+        </div>
+      </div>
+    </div>
+  </div><!-- End Hero Section -->
 
-          <h2>About Me</h2>
+  <main id="main">
 
-            
-
-            <div class="col">
-
-              <p>Hi, my name is <b>Ansar kp</b> and I'm a <b>web developer</b> with 5 years of experience and I have worked on projects for clients in a variety of industries. I'm passionate about creating engaging and user-friendly websites that meet the needs of both businesses and their customers.</p>
-
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about-mf sect-pt4 route">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="box-shadow-full">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="row">
+                    <div class="col-sm-6 col-md-5">
+                      <div class="about-img">
+                        <img src="assets/img/akimg1.jpeg" class="img-fluid rounded b-shadow-a" alt="">
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-7">
+                      <div class="about-info">
+                        <p><span class="title-s">Name: </span> <span>Ansar Kp</span></p>
+                        <p><span class="title-s">Profile: </span> <span>Full Stack Developer</span></p>
+                        <p><span class="title-s">Email: </span> <span>aknotes3@gmail.com</span></p>
+                        <p><span class="title-s">Phone: </span> <span>+91 9400806191</span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="skill-mf">
+                    <p class="title-s">Skill</p>
+                    <span>HTML</span> <span class="pull-right">88%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>CSS3</span> <span class="pull-right">75%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>PHP</span> <span class="pull-right">50%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>JAVASCRIPT</span> <span class="pull-right">90%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>PYTHON</span> <span class="pull-right">85%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>ANDROID</span> <span class="pull-right">50%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="about-me pt-4 pt-md-0">
+                    <div class="title-box-2">
+                      <h5 class="title-left">
+                        About me
+                      </h5>
+                    </div>
+                    <p class="lead">
+                      Aknotes is your personal haven for effortless and efficient note-taking. 
+                      Whether you're a student jotting down important lectures, a writer brainstorming ideas, 
+                      or simply someone who enjoys keeping organized, Aknotes empowers you to capture your 
+                      thoughts and ideas with ease.
+                    </p>
+                    <p class="lead">
+                       Aknotes empowers you to revisit past notes, connect related ideas, 
+                        and uncover hidden insights, propelling your learning and productivity to new heights.
+                    </p>
+                   
+                  </div>
+                </div>
+              </div>
             </div>
-
+          </div>
         </div>
-
-      </section>
-
-
-      <section id="#">
-
-        <div class="container">
-
-          <h2>Contact Me</h2>
-
-          <form>
-
-            <label for="name">Name:</label>
-
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email:</label>
-
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Message:</label>
-
-            <textarea id="message" name="message" required></textarea>
-
-            <button type="submit">Send Message</button>
-
-          </form>
-
-        </div>
-
-      </section>
-
-    </main>
-
-    <footer>
-
-      <div class="container">
-
-        <p>&copy; 2023 <a href="index.html" style="color: white;">Ak Notes</p>
-
       </div>
+    </section><!-- End About Section -->
 
-    </footer>
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services-mf pt-5 route">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="title-box text-center">
+              <h3 class="title-a">
+                Services
+              </h3>
+              <div class="line-mf"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle"><i class="bi bi-briefcase"></i></span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">Web Design</h2>
+                <p class="s-description text-center">
+                  I possess a strong understanding of design principles, user experience, and best practices
+                   for creating websites that achieve their intended goals.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle"><i class="bi bi-card-checklist"></i></span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">Web Development</h2>
+                <p class="s-description text-center">
+                  I bring together creativity and technical expertise to build web applications that 
+                  meet the specific needs of clients.
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle"><i class="bi bi-brightness-high"></i></span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">Graphic Design</h2>
+                <p class="s-description text-center">
+                  I possess a keen eye for design and a knack for creating visually compelling graphics
+                   that effectively communicate messages and ideas.
+                </p>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section><!-- End Services Section -->
+
+  
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(assets/img/overlay-bg.jpg)">
+      <div class="overlay-mf"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="contact-mf">
+              <div id="contact" class="box-shadow-full">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="title-box-2">
+                      <h5 class="title-left">
+                        Send Message Us
+                      </h5>
+                    </div>
+                    <div>
+                      <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                        <div class="row">
+                          <div class="col-md-12 mb-3">
+                            <div class="form-group">
+                              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                            </div>
+                          </div>
+                          <div class="col-md-12 mb-3">
+                            <div class="form-group">
+                              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                            </div>
+                          </div>
+                          <div class="col-md-12 mb-3">
+                            <div class="form-group">
+                              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                            </div>
+                          </div>
+                          <div class="col-md-12">
+                            <div class="form-group">
+                              <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                            </div>
+                          </div>
+                          <div class="col-md-12 text-center my-3">
+                            <div class="loading">Loading</div>
+                            <div class="error-message"></div>
+                            <div class="sent-message">Your message has been sent. Thank you!</div>
+                          </div>
+                          <div class="col-md-12 text-center">
+                            <button type="submit" class="button button-a button-big button-rouded">Send Message</button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="title-box-2 pt-4 pt-md-0">
+                      <h5 class="title-left">
+                        Get in Touch
+                      </h5>
+                    </div>
+                    <div class="more-info">
+                      <p class="lead">
+                        Aknotes empowers you to revisit past notes, connect related ideas, 
+                        and uncover hidden insights, propelling your learning and productivity to new heights.
+                      </p>
+                      <ul class="list-ico">
+                        <li><span class="bi bi-geo-alt"></span>Palakkad, Nellaya, 679331</li>
+                        <li><span class="bi bi-phone"></span> +91 9400806191</li>
+                        <li><span class="bi bi-envelope"></span> aknotes3@gmail.com</li>
+                      </ul>
+                    </div>
+                    <div class="socials">
+                      <ul>
+                        <li><a href=""><span class="ico-circle"><i class="bi bi-facebook"></i></span></a></li>
+                        <li><a href=""><span class="ico-circle"><i class="bi bi-instagram"></i></span></a></li>
+                        <li><a href=""><span class="ico-circle"><i class="bi bi-twitter"></i></span></a></li>
+                        <li><a href=""><span class="ico-circle"><i class="bi bi-linkedin"></i></span></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="copyright-box">
+            <p class="copyright">&copy; Copyright <strong>Aknotes</strong>. All Rights Reserved</p>
+            <div class="credits">
+              <!--
+              All the links in the footer should remain intact.
+              You can delete the links only if you purchased the pro version.
+              Licensing information: https://bootstrapmade.com/license/
+              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=DevFolio
+            -->
+              Designed by <a href="https://bootstrapmade.com/">Ansar kp</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
 
 </body>
+
 </html>
